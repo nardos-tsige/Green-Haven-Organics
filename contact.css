@@ -1,0 +1,63 @@
+/* styles/contact.css */
+:root {
+    --green: #2e7d32;
+    --beige: #f4e9d8;
+    --brown: #6d4c41;
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family: system-ui, sans-serif; background: var(--beige); color: var(--brown); }
+
+.navbar { background:rgba(244,233,216,0.95); position:sticky; top:0; z-index:100; border-bottom:3px solid var(--green); }
+.nav-container { max-width:1200px; margin:0 auto; padding:1rem 2rem; display:flex; align-items:center; justify-content:space-between; }
+.logo { font-size:1.8rem; font-weight:700; color:var(--green); text-decoration:none; }
+.nav-links a { margin-left:2rem; text-decoration:none; color:var(--brown); font-weight:600; }
+.nav-links a:hover { color:var(--green); }
+
+.contact-hero {
+    height: 50vh;
+    background: linear-gradient(rgba(46,125,50,0.5), rgba(46,125,50,0.5)), url('https://thumbs.dreamstime.com/b/wheat-field-sunset-agriculture-landscape-9315223.jpg') center/cover;
+    display:flex; align-items:center; justify-content:center; color:white;
+}
+.contact-hero h1 { font-size:4rem; text-align:center; }
+
+.contact-content {
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid var(--light-green);
+    border-radius: 12px;
+    font-size: 1.1rem;
+}
+.form-container button {
+    background: var(--green);
+    color: white;
+    padding: 1rem 3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    cursor: pointer;
+    width: 100%;
+}
+.form-container button:hover { background: #1b5e20; }
+
+.info { font-size: 1.3rem; }
+.info h2 { color: var(--green); margin-bottom: 1.5rem; }
+
+.footer { background: var(--brown); color: var(--beige); padding:4rem 2rem 2rem; }
+.footer-container { max-width:1200px; margin:0 auto; display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:3rem; }
+.footer-col a { display:block; color:var(--beige); text-decoration:none; margin-bottom:0.8rem; }
+.copyright { margin-top:2rem; opacity:0.7; font-size:0.9rem; }
+
+@media (max-width: 768px) {
+    .contact-content { grid-template-columns: 1fr; }
+}
