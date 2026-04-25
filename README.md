@@ -1,6 +1,8 @@
 # Green-Haven-Organics
-
 A responsive multi-page website for an organic food delivery service in Ethiopia.
+
+**live demo**: https://green-haven-organics-eight.vercel.app/
+**Figma UI/UX design**: https://www.figma.com/design/9Bw5UtkKSLNKyfxrHsqT4M/Green-Haven-Organics?node-id=75-886&t=5WRgj8Mxgd5199xr-1
 
 ## Built With
 
